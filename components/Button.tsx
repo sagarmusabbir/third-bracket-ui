@@ -1,38 +1,3 @@
-// import React, { ButtonHTMLAttributes } from "react";
-
-// interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-//   variant?: "solid" | "outline" | "link";
-//   size?: "sm" | "md" | "lg" | "xl";
-//   color?: "dark" | "light";
-//   disabled?: boolean;
-
-//   onClick?: () => void;
-// }
-
-// const Button: React.FC<ButtonProps> = ({
-//   variant = "solid",
-//   size = "md",
-//   color = "primary",
-//   disabled = false,
-//   onClick,
-//   children,
-//   ...rest
-// }) => {
-//   const buttonClasses = `button-${variant}-${color} button-${size}`;
-//   return (
-//     <button
-//       className={buttonClasses}
-//       disabled={disabled}
-//       onClick={onClick}
-//       {...rest}
-//     >
-//       {children}
-//     </button>
-//   );
-// };
-
-// export default Button;
-
 import React, { AnchorHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 import Link from "next/link";
@@ -58,23 +23,22 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantClasses = {
     solid: {
-      // dark: "bg-gray-800   rounded-md text-white bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-100 dark:bg-opacity-80  hover:bg-opacity-90 dark:hover:bg-opacity-90    border  border-slate-800  ",
-      dark: "dark:bg-gray-800/50 bg-gray-800 hover:bg-gray-800/90 transition-color duration-200 ease-in-out  text-gray-50 border border-gray-800/30 hover:border-gray-800/90",
+      dark: "dark:bg-gray-800/50 bg-gray-800 hover:bg-gray-800 transition-color duration-200 ease-in-out py-3 px-10 rounded-lg text-gray-50 ",
       light:
-        "dark:bg-slate-200/90 bg-slate-200/50 hover:bg-slate-200 transition-color duration-200 ease-in-out  text-gray-900 border border-slate-200 hover:border-slate-200/20  ",
+        "dark:bg-slate-200/90 bg-slate-200 hover:bg-slate-200 transition-color duration-200 ease-in-out py-3 px-10 rounded-lg text-gray-950 ",
     },
     outline: {
-      dark: "bg-transparent    text-gray-900 dark:text-white hover:text-white    hover:bg-gray-900     border  border-gray-800",
+      dark: "border-2 bg-transparent border-gray-800  hover:bg-gray-800  text-gray-800 dark:text-white hover:text-white  transition-color duration-200 ease-in-out py-3 px-10 rounded-lg ",
       light:
-        "bg-transparent  text-gray-900 dark:text-white hover:text-gray-900  hover:bg-slate-100            border  border-slate-200",
+        "border-2 bg-transparent border-slate-200  hover:bg-slate-200  text-gray-800 dark:text-white hover:text-gray-800  transition-color duration-200 ease-in-out py-3 px-10 rounded-lg",
     },
   };
 
   const sizeClasses = {
     sm: "px-3 py-1.5 text-xs h-8",
-    md: "px-5 py-2.5 text-sm h-10",
-    lg: "px-7 py-3.5 text-base h-12",
-    xl: "px-8 py-4 text-lg h-14",
+    md: "px-4 py-2 text-sm h-10",
+    lg: "px-8 h-11 text-base ",
+    xl: "px-10 py-3 text-lg h-12",
   };
 
   const buttonClasses = twMerge(
