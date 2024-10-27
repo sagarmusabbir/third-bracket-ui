@@ -118,6 +118,9 @@ export default function Home() {
           Sizes
         </h3>
         <div className="flex flex-wrap gap-2  items-start">
+<Button variant="solid" size="xs" color="light" href="#">
+            My Button
+          </Button>
           <Button variant="solid" size="sm" color="light" href="#">
             My Button
           </Button>
