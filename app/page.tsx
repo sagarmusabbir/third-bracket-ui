@@ -20,14 +20,14 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-2 gap-4">
           {/* <!-- Primary --> */}
-          <div className="p-4 text-gray-900 bg-slate-100">Primary (Light)</div>
-          <div className="p-4 text-slate-100 bg-gray-900">Primary (Dark)</div>
+          <div className="p-4 text-white bg-gray-900">Primary (Light)</div>
+          <div className="p-4 text-gray-900 bg-slate-100">Primary (Dark)</div>
 
           {/* <!-- Secondary --> */}
-          <div className="p-4 text-gray-700 bg-slate-100">
+          <div className="p-4 bg-gray-700 text-slate-100">
             Secondary (Light)
           </div>
-          <div className="p-4 text-slate-300 bg-gray-900">Secondary (Dark)</div>
+          <div className="p-4 bg-slate-300 text-gray-900">Secondary (Dark)</div>
 
           {/* <!-- Background --> */}
           <div className="p-4 bg-slate-100 text-gray-900">
@@ -55,26 +55,26 @@ export default function Home() {
           Typography
         </h2>
         <div className="grid grid-cols-3 gap-4">
-          <h1 className="text-2xl md:text-3xl xl:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
-            Heading 1
+          <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+            This is Heading One: H1
           </h1>
-          <h2 className="text-xl md:text-2xl xl:text-3xl  font-bold tracking-tight text-gray-900 dark:text-white">
-            Heading 2
+          <h2 className="text-2xl md:text-3xl xl:text-4xl  font-bold tracking-tight text-gray-900 dark:text-white">
+            This is Heading Two: H2
           </h2>
-          <h3 className="text-lg md:text-xl xl:text-2xl  font-semibold tracking-tight text-gray-900 dark:text-white">
-            Heading 3
+          <h3 className="text-xl md:text-2xl xl:text-3xl  font-semibold tracking-tight text-gray-900 dark:text-white">
+            This is Heading Three: H3
           </h3>
-          <h4 className="text-base md:text-lg xl:text-xl  font-semibold tracking-tight text-gray-900 dark:text-white">
-            Heading 4
+          <h4 className="text-lg md:text-xl xl:text-2xl  font-semibold tracking-tight text-gray-900 dark:text-white">
+            This is Heading Four: H4
           </h4>
-          <h5 className="text-sm md:text-base xl:text-lg  font-semibold tracking-tight text-gray-900 dark:text-white">
-            Heading 5
+          <h5 className="text-base md:text-lg xl:text-xl  font-semibold tracking-tight text-gray-900 dark:text-white">
+            This is Heading Five: H5
           </h5>
-          <h6 className="text-xs md:text-sm xl:text-base  font-semibold tracking-tight text-gray-900 dark:text-white">
-            Heading 6
+          <h6 className="text-base md:text-lg xl:text-xl  font-medium tracking-tight text-gray-900 dark:text-white">
+            This is Heading Six: H6
           </h6>
           <div className="col-span-3">
-            <p className="text-xs md:text-sm xl:text-base leading-relaxed text-gray-900 dark:text-white">
+            <p className="text-base leading-relaxed text-gray-900 dark:text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
               text ever since the 1500s, when an unknown printer took a galley
