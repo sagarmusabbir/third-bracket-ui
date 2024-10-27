@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: "solid" | "outline";
-  size?: "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
   color?: "dark" | "light";
   href: string;
 }
@@ -35,10 +35,12 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const sizeClasses = {
-    sm: "px-3 py-1.5 text-xs h-8",
-    md: "px-4 py-2 text-sm h-10",
-    lg: "px-8 h-11 text-base ",
-    xl: "px-10 py-3 text-lg h-12",
+xs: "px-2 py-1 text-xs",
+    sm: "px-3 py-1.5 text-sm",
+    md: "px-4 py-2 text-sm",
+    lg: "px-5 py-2.5 text-base",
+    xl: "px-6 py-3 text-base",
+
   };
 
   const buttonClasses = twMerge(
