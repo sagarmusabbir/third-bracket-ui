@@ -54,7 +54,7 @@ export default function Home() {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
           Typography
         </h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
             This is Heading One: H1
           </h1>
@@ -73,7 +73,7 @@ export default function Home() {
           <h6 className="text-base md:text-lg xl:text-xl  font-medium tracking-tight text-gray-900 dark:text-white">
             This is Heading Six: H6
           </h6>
-          <div className="col-span-3">
+          <div >
             <p className="text-base leading-relaxed text-gray-900 dark:text-white">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&apos;s standard dummy
