@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-white bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70 shadow-sm">
+    <header className="font-sans sticky top-0 z-50 w-full backdrop-blur-md bg-white bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-70 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
