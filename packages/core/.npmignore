@@ -1,0 +1,74 @@
+# Source files
+src/
+tests/
+examples/
+docs/
+
+# Configuration files
+.eslintrc
+.eslintrc.js
+.eslintrc.json
+.prettierrc
+.prettierrc.js
+.prettierrc.json
+tsconfig.json
+jest.config.js
+.editorconfig
+.gitignore
+.env*
+.babelrc
+.babelrc.js
+vite.config.ts
+tsup.config.ts
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.swo
+.DS_Store
+
+# Development files
+node_modules/
+coverage/
+.coverage/
+.nyc_output/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build process
+.turbo/
+.next/
+.cache/
+tmp/
+temp/
+
+# Test files
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+test/
+*.stories.tsx
+*.story.tsx
+
+# Misc
+.github/
+CONTRIBUTING.md
+CHANGELOG.md
+TODO.md
+*.tgz
+.travis.yml
+.circleci/
+.gitlab-ci.yml
+renovate.json
+CODE_OF_CONDUCT.md
+
+# Keep these files
+!dist/
+!LICENSE
+!README.md
