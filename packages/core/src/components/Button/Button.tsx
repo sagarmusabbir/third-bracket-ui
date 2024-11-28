@@ -19,8 +19,8 @@ const buttonVariants = cva(
         link: "underline underline-offset-8 decoration-from-font decoration-slate-400/40 dark:decoration-gray-600/60  decoration-dashed     text-slate-900 text-gray-700 hover:decoration-slate-400/40 dark:hover:decoration-gray-600/60 hover:decoration-solid hover:text-gray-800 dark:text-slate-300 dark:hover:text-slate-200",
       },
       size: {
-        base: "h-9 rounded-md px-4  text-sm",
-        sm: " h-8 px-3 rounded-md text-sm",
+        base: "h-8 rounded-md px-4  text-sm",
+        sm: " h-6 px-3 rounded-md text-sm",
         lg: "h-10 px-5 rounded-lg text-base",
         xl: "h-12 px-6 rounded-lg text-base",
       },

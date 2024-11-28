@@ -13,17 +13,15 @@ export default function TestPage() {
         }}
         href="./"
       />
-      <div className="p-8 space-y-4">
-        <div className="space-x-4 ">
+      <div className="p-8 mx-auto">
+        <div className="flex flex-wrap gap-4">
           <Button>Base</Button>
           <Button variant="ghost">Ghost</Button>
           <Button variant="glow">Glow</Button>
           <Button variant="framed">Framed</Button>
           <Button variant="dim">Dim</Button>
           <Button variant="link">Link</Button>
-        </div>
 
-        <div className="space-x-4 ">
           <Button size="sm">Small</Button>
           <Button size="base">Base</Button>
           <Button size="lg">Large</Button>
