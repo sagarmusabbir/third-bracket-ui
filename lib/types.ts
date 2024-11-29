@@ -1,3 +1,5 @@
+import { CardPropps } from "@/packages/core/src";
+
 export interface LinkItem {
   id: number;
   label: string;
@@ -27,7 +29,7 @@ export interface FeaturedSectionProps {
   ctaButtons: {
     button1: CTAButton;
   };
-  cards: CardProps[];
+  cards: CardPropps[];
 }
 
 //Type for grouped navigation items

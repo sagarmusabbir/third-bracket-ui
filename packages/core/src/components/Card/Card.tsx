@@ -4,10 +4,10 @@ import { RiExternalLinkFill } from "react-icons/ri";
 import Image from "next/image";
 import { AnimatedGrid } from "../AnimatedGrid";
 
-export interface CardProps {
+export interface CardPropps {
   title: string;
   description?: string;
-  image?: {
+  image: {
     src: string;
     alt: string;
   };
@@ -15,7 +15,7 @@ export interface CardProps {
   className?: string;
 }
 
-export const Card: React.FC<CardProps> = ({
+export const Card: React.FC<CardPropps> = ({
   title,
   description,
   image,

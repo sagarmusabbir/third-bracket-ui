@@ -1,6 +1,7 @@
 import { Button } from "../ui/Button";
-import CardGroup from "./CardGroup";
+
 import { FeaturedSectionProps } from "@/lib/types";
+import CardGroup from "./CardGroup";
 
 const FeaturedSection: React.FC<FeaturedSectionProps> = ({
   heading,
@@ -25,6 +26,8 @@ const FeaturedSection: React.FC<FeaturedSectionProps> = ({
             </h2>
             {subheading && <h5 className="mt-6    mx-auto  ">{subheading}</h5>}
           </div>
+
+          {/* <CardGroup cards={cards} /> */}
 
           <CardGroup cards={cards} />
 

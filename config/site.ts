@@ -1,4 +1,5 @@
-import { CardProps, LinkItem, NavGroup } from "@/lib/types";
+import { LinkItem, NavGroup } from "@/lib/types";
+import { CardPropps } from "@/packages/core/src";
 import {
   RiCodeBlock,
   RiLayout3Line,
@@ -367,50 +368,50 @@ export const getBreadcrumbs = (path: string): LinkItem[] => {
 };
 
 //Cards
-export const componentCards: CardProps[] = [
+export const componentCards: CardPropps[] = [
   {
-    header: "Buttons",
-    skeleton: {
+    title: "Buttons",
+    image: {
       src: "/images/skeletons/button.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Navbar",
-    skeleton: {
+    title: "Navbar",
+    image: {
       src: "/images/skeletons/button.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Cards",
-    skeleton: {
+    title: "Cards",
+    image: {
       src: "/images/skeletons/button.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Buttons",
-    skeleton: {
+    title: "Buttons",
+    image: {
       src: "/images/skeletons/button.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Navbar",
-    skeleton: {
+    title: "Navbar",
+    image: {
       src: "/images/skeletons/button.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Cards",
-    skeleton: {
+    title: "Cards",
+    image: {
       src: "/images/skeletons/button.svg",
       alt: "Third Bracket UI Buttons",
     },
@@ -418,50 +419,50 @@ export const componentCards: CardProps[] = [
   },
 ];
 
-export const blockCards: CardProps[] = [
+export const blockCards: CardPropps[] = [
   {
-    header: "Header",
-    skeleton: {
+    title: "Header",
+    image: {
       src: "/images/skeletons/navbar.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Footer",
-    skeleton: {
+    title: "Footer",
+    image: {
       src: "/images/skeletons/navbar.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Hero",
-    skeleton: {
+    title: "Hero",
+    image: {
       src: "/images/skeletons/navbar.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Header",
-    skeleton: {
+    title: "Header",
+    image: {
       src: "/images/skeletons/navbar.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Footer",
-    skeleton: {
+    title: "Footer",
+    image: {
       src: "/images/skeletons/navbar.svg",
       alt: "Third Bracket UI Buttons",
     },
     href: "#",
   },
   {
-    header: "Hero",
-    skeleton: {
+    title: "Hero",
+    image: {
       src: "/images/skeletons/navbar.svg",
       alt: "Third Bracket UI Buttons",
     },

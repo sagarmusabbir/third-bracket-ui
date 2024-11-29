@@ -3,6 +3,9 @@
 
 export * from "./components/Card";
 export * from "./components/AnimatedGrid";
-export * from "./types";
+
 // packages/core/src/index.ts
 export * from "./components/Button";
+export * from "./blocks/Navbar";
+export { Header } from "./blocks/Navbar/Header";
+export * from "./components/ThemeToggle";

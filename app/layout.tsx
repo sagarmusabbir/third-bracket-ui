@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
-import RootLayout from "@/components/layout/RootLayout";
+import RootLayout from "@/app/ui/RootLayout";
 import { geistSans } from "./fonts/fonts";
 
 export const metadata: Metadata = {

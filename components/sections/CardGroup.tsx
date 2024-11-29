@@ -1,9 +1,7 @@
-import { CardProps } from "@/lib/types";
-
-import Card from "../ui/Card";
+import { Card, CardPropps } from "@/packages/core/src";
 
 interface CardGroup {
-  cards: CardProps[];
+  cards: CardPropps[];
 }
 
 const CardGroup: React.FC<CardGroup> = ({ cards }) => {
@@ -17,12 +15,13 @@ const CardGroup: React.FC<CardGroup> = ({ cards }) => {
         {cards.map((card, index) => (
           <Card
             key={index}
-            header={card.header}
-            skeleton={{
-              src: card.skeleton.src,
-              alt: card.skeleton.alt,
-            }}
+            title={card.title}
+            description={card.description}
             href={card.href}
+            image={{
+              src: card.image.src,
+              alt: card.image.alt,
+            }}
           ></Card>
         ))}
       </div>

@@ -1,8 +1,9 @@
 // layouts/RootLayout.tsx
 import { ReactNode } from "react";
 
-import RootHeader from "@/app/ui/RootHeader";
 import Footer from "@/app/ui/Footer";
+
+import RootHeader from "./RootHeader";
 
 interface RootLayoutProps {
   children: ReactNode;
