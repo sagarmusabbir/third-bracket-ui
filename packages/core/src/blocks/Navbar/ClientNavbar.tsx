@@ -70,7 +70,7 @@ export const ClientNavbar: React.FC<NavbarProps> = ({
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="relative flex items-center justify-between px-4 h-16 border-b border-dashed dark:border-gray-800/50">
+          <div className="relative flex items-center justify-between px-4 h-16 border-b border-dashed border-slate-200 dark:border-gray-800">
             <h2 className="text-lg font-medium text-gray-800 dark:text-white">
               Menu
             </h2>
@@ -83,7 +83,7 @@ export const ClientNavbar: React.FC<NavbarProps> = ({
             </button>
           </div>
 
-          <nav className="relative m-6 rounded-lg divide-y divide-dashed border-dashed divide-gray-200/70 dark:divide-gray-700/40 border border-gray-200/70 dark:border-gray-700/40">
+          <nav className="relative m-6 rounded-lg divide-y divide-dashed border-dashed divide-gray-200/70 dark:divide-gray-700/40 border border-slate-200 dark:border-gray-800">
             {links.map(({ path, label }) => (
               <a
                 key={path}

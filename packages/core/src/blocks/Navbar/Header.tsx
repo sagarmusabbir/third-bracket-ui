@@ -14,7 +14,7 @@ export const Header = ({
 }: HeaderProps) => {
   return (
     <header
-      className={`sticky bg-white dark:bg-black  top-0  z-50 border-dashed border-b border-slate-400/20 dark:border-gray-700/50 ${className}`}
+      className={`sticky bg-white dark:bg-black  top-0  z-50 border-dashed border-b border-slate-200 dark:border-gray-800 ${className}`}
     >
       {/* <div className="relative ">
         <AnimatedGrid />

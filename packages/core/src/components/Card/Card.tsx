@@ -36,7 +36,7 @@ export const Card: React.FC<CardPropps> = ({
         hover:border-slate-300
         hover:shadow-md 
         border-dashed
-        dark:border-slate-700 
+        dark:border-gray-800 
         dark:hover:border-slate-600
         overflow-hidden
         ${className}

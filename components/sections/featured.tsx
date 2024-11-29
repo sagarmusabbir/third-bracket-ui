@@ -1,7 +1,6 @@
-import { Button } from "../ui/Button";
-
 import { FeaturedSectionProps } from "@/lib/types";
 import CardGroup from "./CardGroup";
+import { Button } from "@/packages/core/src";
 
 const FeaturedSection: React.FC<FeaturedSectionProps> = ({
   heading,
