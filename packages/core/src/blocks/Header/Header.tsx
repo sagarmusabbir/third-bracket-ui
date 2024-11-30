@@ -23,14 +23,14 @@ export const Header = ({
           {/* Brand Section */}
           <Link
             href={brandLogo.href}
-            className="group transition-opacity duration-200 ease-in-out hover:opacity-100 opacity-90 order-1"
+            className="group transition-opacity duration-200 ease-in-out hover:opacity-100 opacity-90 order-1 "
           >
             <Image
               src={brandLogo.src}
               alt={brandLogo.alt}
               width={104}
               height={24}
-              className="h-6 w-auto dark:invert"
+              className="h-5 w-auto dark:invert  "
             />
           </Link>
 

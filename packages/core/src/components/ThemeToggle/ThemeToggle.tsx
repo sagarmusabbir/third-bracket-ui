@@ -3,7 +3,7 @@
 
 import React from "react";
 import { useEffect, useState } from "react";
-import { RiMoonFill, RiSunFill } from "react-icons/ri";
+import { RiMoonLine, RiSunLine } from "react-icons/ri";
 
 export const ThemeToggle = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -63,9 +63,9 @@ export const ThemeToggle = () => {
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
     >
       {theme === "light" ? (
-        <RiMoonFill className="w-4 h-4 text-gray-950 " />
+        <RiMoonLine className="w-4 h-4 text-gray-950 " />
       ) : (
-        <RiSunFill className="w-4 h-4 text-white" />
+        <RiSunLine className="w-4 h-4 text-white" />
       )}
     </button>
   );

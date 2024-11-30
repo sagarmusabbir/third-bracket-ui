@@ -26,6 +26,161 @@ import {
   RiShieldFill,
 } from "react-icons/ri";
 
+export const sidebarItems = [
+  {
+    id: 11,
+    label: "Getting Started",
+    path: "/docs/getting-started",
+    parentId: 1,
+    children: [
+      {
+        id: 111,
+        label: "Introduction",
+        path: "/docs/getting-started/introduction",
+        parentId: 11,
+      },
+      {
+        id: 112,
+        label: "Installation",
+        path: "/about",
+        parentId: 11,
+      },
+    ],
+  },
+  {
+    id: 12,
+    label: "Components",
+    path: "/docs/components",
+    parentId: 1,
+    children: [
+      {
+        id: 121,
+        label: "Buttons",
+        path: "/docs/components/buttons",
+        parentId: 12,
+        children: [
+          {
+            id: 1211,
+            label: "Primary Buttons",
+            path: "/docs/components/buttons/primary",
+            parentId: 121,
+          },
+          {
+            id: 1212,
+            label: "Secondary Buttons",
+            path: "/docs/components/buttons/secondary",
+            parentId: 121,
+          },
+        ],
+      },
+      {
+        id: 122,
+        label: "Forms",
+        path: "/docs/components/forms",
+        parentId: 12,
+        children: [
+          {
+            id: 1221,
+            label: "Input Fields",
+            path: "/docs/components/forms/input",
+            parentId: 122,
+          },
+          {
+            id: 1222,
+            label: "Select Menus",
+            path: "/docs/components/forms/select",
+            parentId: 122,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 13,
+    label: "Utilities",
+    path: "/docs/utilities",
+    parentId: 1,
+    children: [
+      {
+        id: 131,
+        label: "Colors",
+        path: "/docs/utilities/colors",
+        parentId: 13,
+        children: [
+          {
+            id: 1311,
+            label: "Color Palette",
+            path: "/docs/utilities/colors/palette",
+            parentId: 131,
+          },
+          {
+            id: 1312,
+            label: "Color Functions",
+            path: "/docs/utilities/colors/functions",
+            parentId: 131,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 14,
+    label: "Advanced",
+    path: "/docs/advanced",
+    parentId: 1,
+    children: [
+      {
+        id: 141,
+        label: "Configuration",
+        path: "/docs/advanced/configuration",
+        parentId: 14,
+        children: [
+          {
+            id: 1411,
+            label: "Basic Setup",
+            path: "/docs/advanced/configuration/basic",
+            parentId: 141,
+          },
+          {
+            id: 1412,
+            label: "Advanced Setup",
+            path: "/docs/advanced/configuration/advanced",
+            parentId: 141,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 15,
+    label: "FAQ",
+    path: "/docs/faq",
+    parentId: 1,
+    children: [
+      {
+        id: 151,
+        label: "Common Issues",
+        path: "/docs/faq/common-issues",
+        parentId: 15,
+        children: [
+          {
+            id: 1511,
+            label: "Installation Issues",
+            path: "/docs/faq/common-issues/installation",
+            parentId: 151,
+          },
+          {
+            id: 1512,
+            label: "Usage Issues",
+            path: "/docs/faq/common-issues/usage",
+            parentId: 151,
+          },
+        ],
+      },
+    ],
+  },
+];
+
 //Footer
 export const FooterNavLinks: LinkItem[] = [
   {

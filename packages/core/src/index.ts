@@ -11,3 +11,6 @@ export * from "./blocks/Header";
 export * from "./components/ThemeToggle";
 export * from "./components/AnimatedGrid";
 export * from "./components/Navbar";
+
+// Add this line to export Sidebar
+export * from "./components/Sidebar";
