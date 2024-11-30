@@ -6,6 +6,8 @@ export * from "./components/AnimatedGrid";
 
 // packages/core/src/index.ts
 export * from "./components/Button";
-export * from "./blocks/Navbar";
-export { Header } from "./blocks/Navbar/Header";
+
+export * from "./blocks/Header";
 export * from "./components/ThemeToggle";
+export * from "./components/AnimatedGrid";
+export * from "./components/Navbar";

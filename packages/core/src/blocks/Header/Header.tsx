@@ -1,27 +1,26 @@
 // packages/core/src/blocks/Header/Header.tsx
 import Image from "next/image";
 import Link from "next/link";
-import { AnimatedGrid } from "../Navbar/AnimatedGrid";
+
 import type { HeaderProps } from "./types";
 import React from "react";
 import { ThemeToggle } from "../../components/ThemeToggle";
 
+import { Navbar } from "../../components/Navbar";
+
 export const Header = ({
   brandLogo,
-  navbar,
+  navigation,
   children,
   className = "",
 }: HeaderProps) => {
   return (
     <header
-      className={`sticky bg-white dark:bg-black  top-0  z-50 border-dashed border-b border-slate-200 dark:border-gray-800 ${className}`}
+      className={`sticky   top-0  z-40 border-dashed border-b border-slate-200 dark:border-gray-800 ${className}`}
     >
-      {/* <div className="relative ">
-        <AnimatedGrid />
-      </div> */}
-      <div className="relative   mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo Section */}
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Brand Section */}
           <Link
             href={brandLogo.href}
             className="group transition-opacity duration-200 ease-in-out hover:opacity-100 opacity-90 order-1"
@@ -47,10 +46,10 @@ export const Header = ({
               <ThemeToggle />
             </div>
             <div className="order-last md:order-first">
-              <div className="relative ">
-                <AnimatedGrid />
-              </div>
-              {navbar}
+              <Navbar
+                links={navigation.links}
+                className={navigation.className}
+              />
             </div>
           </div>
         </div>
