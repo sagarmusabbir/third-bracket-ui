@@ -1,9 +1,8 @@
 // layouts/RootLayout.tsx
 import { ReactNode } from "react";
 
-import Footer from "@/app/ui/Footer";
-
 import RootHeader from "./RootHeader";
+import MainFooter from "@/app/ui/Footer";
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -11,10 +10,10 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col relative">
       <RootHeader />
-      <main className="flex-grow">{children}</main>
-      <Footer />
+      <main className="flex-grow pt-16">{children}</main>
+      <MainFooter />
     </div>
   );
 }

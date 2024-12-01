@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import { RiExternalLinkFill } from "react-icons/ri";
 import Image from "next/image";
-import { AnimatedGrid } from "../AnimatedGrid";
 
 export interface CardPropps {
   title: string;
@@ -29,21 +28,19 @@ export const Card: React.FC<CardPropps> = ({
         rounded-lg 
         border
         border-slate-200 
-        bg-slate-50/50 dark:bg-gray-950/30 backdrop-blur-2xl
+        bg-white/70 dark:bg-black backdrop-blur-2xl
         shadow-sm 
-        transition-all 
+        transition-all ease-in-out 
         duration-200
-        hover:border-slate-300
-        hover:shadow-md 
+        
+        hover:backdrop-blur-0
         border-dashed
         dark:border-gray-800 
-        dark:hover:border-slate-600
+        
         overflow-hidden
         ${className}
       `}
     >
-      <AnimatedGrid />
-
       <div className="relative z-10">
         {image && (
           <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
