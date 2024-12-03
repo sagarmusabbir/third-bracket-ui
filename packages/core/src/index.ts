@@ -14,3 +14,4 @@ export * from "./components/Navbar";
 
 // Add this line to export Sidebar
 export * from "./components/Sidebar";
+export {Footer, FooterProps} from "./components/Footer"
