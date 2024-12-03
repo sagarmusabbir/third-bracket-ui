@@ -22,13 +22,13 @@ export interface BrandInfo {
   address?: string;
 }
 
-export interface BrandLogo {
+export interface FooterLogo {
   src: string;
   alt: string;
   href: string;
 }
 
-export interface FooterBrand extends BrandLogo {
+export interface FooterBrand extends FooterLogo {
   info: BrandInfo;
   social: SocialLinks;
 }
