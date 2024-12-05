@@ -1,18 +1,30 @@
 // packages/core/src/components/SubscriptionForm/SubscriptionForm.tsx
 import React from "react";
 import { SubscriptionFormClient } from "./SubscriptionFormClient";
-import { SubscriptionFormProps } from "./types";
+import { SubscriptionFormClientProps } from "./types";
 
 export const SubscriptionForm = ({
-  addSubscriber,
+  // addSubscriber,
+  // buttonText,
+  // className,
+
   buttonText,
-  className,
-}: SubscriptionFormProps) => {
+  onSuccess,
+  onError,
+  endpoint,
+}: SubscriptionFormClientProps) => {
   return (
+    // <SubscriptionFormClient
+    //   addSubscriber={addSubscriber}
+    //   buttonText={buttonText}
+    //   className={className}
+    // />
+
     <SubscriptionFormClient
-      addSubscriber={addSubscriber}
       buttonText={buttonText}
-      className={className}
+      onSuccess={onSuccess}
+      onError={onError}
+      endpoint={endpoint}
     />
   );
 };

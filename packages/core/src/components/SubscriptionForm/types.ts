@@ -9,9 +9,17 @@ export interface SubscriptionFormProps {
   className?: string;
 }
 
+// export interface SubscriptionFormClientProps {
+//   // Now we only pass the email instead of the whole event handler
+//   addSubscriber: (email: string) => Promise<void>;
+//   buttonText?: string;
+//   className?: string;
+// }
+
 export interface SubscriptionFormClientProps {
-  // Now we only pass the email instead of the whole event handler
-  addSubscriber: (email: string) => Promise<void>;
-  buttonText?: string;
   className?: string;
+  buttonText?: string;
+  onSuccess?: (data: { email: string; name?: string }) => void;
+  onError?: (error: Error) => void;
+  endpoint?: string;
 }

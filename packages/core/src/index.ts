@@ -15,3 +15,8 @@ export * from "./components/Navbar";
 // Add this line to export Sidebar
 export * from "./components/Sidebar";
 export * from "./components/Footer";
+
+// packages/core/src/index.ts
+export { NewsLetterSubscribe } from "./blocks/NewsLetterSubscribe/NewsLetterSubscribe";
+export { useNewsletterSubscription } from "./hooks/useNewsletterSubscription";
+export type { SubscriptionData } from "./hooks/useNewsletterSubscription";

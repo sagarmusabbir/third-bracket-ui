@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -75,7 +76,16 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
             </div>
             <div className="w-1/4 space-y-4">
-              <NewsLetterSubscribe />
+              {/* <NewsLetterSubscribe /> */}
+              <NewsLetterSubscribe
+                endpoint="/api/newsletter/subscribe"
+                onSuccess={(data) => {
+                  console.log(`${data.email} subscribed successfully`);
+                }}
+                onError={(error) => {
+                  console.error("Subscription failed:", error);
+                }}
+              />
             </div>
           </div>
         </div>
