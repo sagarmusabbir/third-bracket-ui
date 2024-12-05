@@ -5,8 +5,9 @@ import Image from "next/image";
 
 import { HeroProps } from "@/lib/types";
 import HeroIllustration from "../illustrations/roothero";
-import { Button } from "../ui/Button";
+
 import { AnimatedGrid } from "../ui/AnimatedGrid";
+import { Button } from "@/packages/core/src";
 
 const Hero = ({
   heading,

@@ -142,5 +142,5 @@ const footerData: FooterProps = {
 }
 
 export default function RootFooter() {
-  return <Footer {...footerData} />;
+  return <Footer className="" {...footerData} />;
 }

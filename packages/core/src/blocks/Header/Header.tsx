@@ -20,7 +20,7 @@ export const Header = ({
 
       className={`fixed w-full top-0 z-40 bg-white dark:bg-black border-dashed border-b border-slate-200 dark:border-gray-800 ${className}`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Brand Section */}
           <Link
